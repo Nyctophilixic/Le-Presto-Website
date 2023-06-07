@@ -1,0 +1,278 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+* {
+    box-sizing: border-box;
+} 
+body {
+    margin: 0;
+    font-family: 'Big Shoulders Text', cursive;
+    background-color: #370409;
+}
+.nav-square {
+    background-color: black !important;
+    border-radius: 20px;
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .nav li {
+        list-style: none;
+        margin: 0.5rem;
+    }
+
+        .nav li a {
+            display: block;
+            padding: 1rem;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+            .nav li a:hover {
+                color: deepskyblue;
+            }
+
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/261598.jpg);
+    background-size: cover;
+}
+.intro-section h1 {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: antiquewhite;
+    padding: 10px;
+    font-family: 'Big Shoulders Text', cursive;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 15vh;
+}
+.blur-square {
+    background-color: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-family: 'Big Shoulders Text', cursive;
+    font-weight: 800;
+    font-size: 8vw;
+    text-transform: uppercase;
+}
+
+.title-word {
+    animation: color-animation 6s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #DC7726;
+    --color-2: #B40025;
+    --color-3: #837126;
+    --color-4: black;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    25% {
+        color: var(--color-2)
+    }
+
+    50% {
+        color: var(--color-3)
+    }
+
+    75% {
+        color: var(--color-4)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    font-family: 'Big Shoulders Text';
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+label {
+    margin: 1rem 0 0.5rem;
+    color: white;
+    font-family: 'Big Shoulders Text';
+}
+
+input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ddd;
+}
+
+button {
+    margin-top: 1rem;
+    margin-left: 7.5vw;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-content: flex-end;
+    width: 15vw;
+}
+
+    button:hover {
+        background-color: green;
+    }
+
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro-section {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .intro-section h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .row-flex h3 {
+            font-size: 25px;
+            text-align: center;
+        }
+}
+.end-section {
+    background-color: #370409 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+/* Style for the contact information */
+.contact-info {
+    color: white;
+    font-family: 'Big Shoulders Text';
+    order: 1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.square {
+    background-color: black;
+    border-radius: 20px;
+    font-size:200%;
+}
+.contact-info h4 {
+    margin: 0;
+    padding: 0;
+    font-size: 150%;
+}
+
+.social-media-icons {
+    margin-top: 6vw;
+    align-content: center;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .social-media-icons a {
+        display: inline-block;
+        margin-left: 10px;
+    }
+
+    .social-media-icons i {
+        font-size: 40px;
+        color: white;
+    }
+
+    .social-media-icons a:hover i {
+        color: black;
+    }
+
+.section-space {
+    margin-top: 10vh;
+    border-radius: 10px;
+    background-color: white !important;
+    height: 2vw;
+}

@@ -1,0 +1,247 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+body {
+    background-color: #370409 !important;
+}
+.nav {
+    margin-top: 2vh;
+    font-family: 'Big Shoulders Text', cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+}
+
+    .nav li {
+        list-style: none;
+        margin: 0.5rem;
+    }
+
+        .nav li a {
+            display: block;
+            padding: 1rem;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+            .nav li a:hover {
+                color: deepskyblue;
+            }
+
+.section-intro {
+    height: 100vh;
+    background-image: url(img/pexels-vincent-ma-janssen-1310777.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.blur-square {
+    background-color: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    font-size: 8.5vw;
+    text-transform: uppercase;
+}
+
+.title-word {
+    animation: color-animation 6s linear infinite;
+}
+
+.title-word-1 {
+    --color-1: #DC7726;
+    --color-2: #B40025;
+    --color-3: #837126;
+    --color-4: black;
+}
+
+.title-word-2 {
+    --color-1: #837126;
+    --color-2: black;
+    --color-3: #7E9CAD;
+    --color-4: black;
+}
+
+@keyframes color-animation {
+    0% {
+        color: var(--color-1)
+    }
+
+    25% {
+        color: var(--color-2)
+    }
+
+    50% {
+        color: var(--color-3)
+    }
+
+    75% {
+        color: var(--color-4)
+    }
+
+    100% {
+        color: var(--color-1)
+    }
+}
+
+.section-intro h1 {
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: antiquewhite;
+    padding: 10px;
+    font-family: 'Big Shoulders Text', cursive;
+    text-align: center;
+    color: white;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.row {
+    width: 30%;
+    height: max-content;
+    margin : 10%;
+    align-content: center;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}
+/* Style for the footer */
+.end-section {
+
+    background-color: #370409 !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Style for the contact information */
+.contact-info {
+    color: white;
+    font-family: 'Big Shoulders Text';
+    order: 1;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.social-media-icons {
+    margin-top: 4vw;
+    align-content: center;
+    order: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .social-media-icons a {
+        display: inline-block;
+        margin-left: 10px;
+
+    }
+
+    .social-media-icons i {
+        font-size: 40px;
+        color: white;
+    }
+    .social-media-icons a:hover i {
+        color: black;
+    }
+.section-space {
+    border-radius: 10px;
+    background-color: white !important;
+    height: 2vw;
+}
+.nav-square {
+    background-color: black !important;
+    border-radius: 20px;
+}
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .intro-section {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .intro-section h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .row-flex h3 {
+            font-size: 25px;
+            text-align: center;
+        }
+}
