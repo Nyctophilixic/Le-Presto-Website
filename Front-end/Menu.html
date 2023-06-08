@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="Menu.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Le Presto's Menu'</title>
+	<link rel="icon" href="img/icon.jpg" type="image/x-icon">
+</head>
+<body>
+
+	<nav>
+		<ul class="nav">
+			<li class="nav-item">
+				<a class="nav-square" href="http://localhost/DAW-Project/index.html">Index</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-square" href="http://localhost/DAW-Project/Menu.html">Menu</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-square" href="http://localhost/reservation.php">Reservation</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-square" href="http://localhost/DAW-Project/About.php">About Us</a>
+			</li>
+		</ul>
+	</nav>
+	<section class="section-intro">
+		<header>
+			<div class="container">
+				<div class="blur-square">
+					<h1 class="title">
+						<span class="title-word title-word-1">Our</span>
+						<span class="title-word title-word-2">Menu</span>
+					</h1>
+				</div>
+			</div>
+		</header>
+	</section>
+	<section>
+		<div>
+			<p> </p>
+		</div>
+		<div id="photo-container">
+			<div id="row1" class="row">
+				<a href="http://localhost/Menu.php?category=Pastas "><img src="img/Pastas.jpg" alt="Photo 1"></a>
+				<a href="http://localhost/Menu.php?category=Desserts"><img src="img/Desserts.jpg" alt="Photo 2"></a>
+			</div>
+			<div id="row2" class="row">
+				<a href="http://localhost/Menu.php?category=Appetizers"><img src="img/Appetizers.jpg" alt="Photo 3"></a>
+				<a href="http://localhost/Menu.php?category=Beverages"><img src="img/Beverages.jpg" alt="Photo 4"></a>
+			</div>
+			<div id="row3" class="row">
+				<a href="http://localhost/Menu.php?category=Pizzas"><img src="img/Pizzas.jpg" alt="Photo 5"></a>
+				<a href="http://localhost/Menu.php?category=Salads"><img src="img/Salads.jpg" alt="Photo 6"></a>
+			</div>
+		</div>
+	</section>
+	<section class="section-space">
+	</section>
+	<section class="end-section">
+		<div class="contact-info">
+			<h4>Contact us at:</h4>
+			<p>Marriott Constantine</p>
+			<p>Phone: +213 556 04 65 14</p>
+			<p>Email: Lepresto@mail.com</p>
+		</div>
+		<div class="social-media-icons">
+			<a href="https://www.facebook.com"><i class="fa fa-facebook"></i></a>
+			<a href="https://www.twitter.com"><i class="fa fa-twitter"></i></a>
+			<a href="https://www.instagram.com"><i class="fa fa-instagram"></i></a>
+		</div>
+	</section>
+	<script>
+
+		var links = document.querySelectorAll('#photo-container a');
+		links.forEach(function (link) {
+			link.addEventListener('click', function (event) {
+				event.preventDefault();
+				window.location.href = link.href;
+			});
+		});
+	</script>
+</body>
+
+</html> 
